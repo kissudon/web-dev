@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>QuickCart — Groceries Delivered Fast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">QC</div>
+        <div class="brand-text">
+          <h1>QuickCart</h1>
+          <p>Groceries in minutes</p>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <input id="search" class="search" type="search" placeholder="Search for products, brands or categories">
+        <button id="searchBtn" class="search-btn">Search</button>
+      </div>
+
+      <nav class="nav-actions">
+        <button class="login">Sign in</button>
+        <button id="cartBtn" class="cart">Cart <span id="cartCount" class="cart-count">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Fastest grocery delivery near you</h2>
+          <p>Fresh produce, pantry staples and everyday essentials — delivered in minutes.</p>
+          <div class="hero-actions">
+            <input class="address" placeholder="Enter delivery location" aria-label="delivery location">
+            <button class="cta">Get Started</button>
+          </div>
+        </div>
+        <div class="hero-illustration">
+          <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=800&q=60" alt="groceries delivery">
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <h3>Popular Categories</h3>
+      <div class="category-list">
+        <div class="cat">Fruits</div>
+        <div class="cat">Vegetables</div>
+        <div class="cat">Dairy</div>
+        <div class="cat">Beverages</div>
+        <div class="cat">Snacks</div>
+      </div>
+    </section>
+
+    <section class="products container">
+      <h3>Top picks for you</h3>
+      <div id="productsGrid" class="grid">
+        <!-- product cards injected by script or replicated here -->
+      </div>
+    </section>
+  </main>
+
+  <button id="floatingCart" class="floating-cart" aria-label="Open cart">
+    🛒 <span id="floatingCount">0</span>
+  </button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; QuickCart — Fast grocery delivery. Built with ❤️</p>
+      <div class="social">Follow us: <a href="#">Twitter</a> · <a href="#">Instagram</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
