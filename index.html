@@ -3,82 +3,288 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>QuickCart — Groceries Delivered Fast</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>anujkit — Dark • Quick Groceries</title>
+  <meta name="description" content="anujkit dark theme — colorful, fast grocery deliveries. HTML-only design (no CSS, no JS).">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="logo">QC</div>
-        <div class="brand-text">
-          <h1>QuickCart</h1>
-          <p>Groceries in minutes</p>
-        </div>
-      </div>
+<body bgcolor="#0b0f14" text="#e6eef3" link="#a3d9ff" alink="#86c9ff" vlink="#86aee8">
 
-      <div class="search-wrap">
-        <input id="search" class="search" type="search" placeholder="Search for products, brands or categories">
-        <button id="searchBtn" class="search-btn">Search</button>
-      </div>
+  <!-- Header / Branding -->
+  <table width="100%" cellpadding="12" cellspacing="0" border="0" bgcolor="#0f1720">
+    <tr>
+      <td valign="middle" style="padding-left:18px;">
+        <font face="Trebuchet MS, Arial, Helvetica, sans-serif">
+          <font size="+3" color="#fff"><b>anujkit</b></font><br>
+          <font color="#a0d8ff">fast • fresh • colourful — dark edition</font>
+        </font>
+      </td>
+      <td align="right" valign="middle" width="420" style="padding-right:18px;">
+        <font face="Verdana, Arial, Helvetica, sans-serif" color="#fff" size="-1">
+          <b>Delivery in 15–30 min</b><br>
+          <small>Open: 7:00 AM – 11:00 PM • Daily</small>
+        </font>
+      </td>
+    </tr>
+  </table>
 
-      <nav class="nav-actions">
-        <button class="login">Sign in</button>
-        <button id="cartBtn" class="cart">Cart <span id="cartCount" class="cart-count">0</span></button>
-      </nav>
-    </div>
-  </header>
+  <!-- Nav bar -->
+  <table width="100%" cellpadding="8" cellspacing="4" border="0" bgcolor="#0b0f14">
+    <tr>
+      <td align="center">
+        <font face="Verdana, Arial" color="#dfeffa">
+          <a href="#home" style="text-decoration:none;color:#dfeffa">Home</a> &nbsp; | &nbsp; 
+          <a href="#shop" style="text-decoration:none;color:#dfeffa">Shop</a> &nbsp; | &nbsp; 
+          <a href="#offers" style="text-decoration:none;color:#ffd9a3">Offers</a> &nbsp; | &nbsp; 
+          <a href="#stores" style="text-decoration:none;color:#dfeffa">Stores</a> &nbsp; | &nbsp; 
+          <a href="#help" style="text-decoration:none;color:#dfeffa">Help</a>
+        </font>
+      </td>
+    </tr>
+  </table>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h2>Fastest grocery delivery near you</h2>
-          <p>Fresh produce, pantry staples and everyday essentials — delivered in minutes.</p>
-          <div class="hero-actions">
-            <input class="address" placeholder="Enter delivery location" aria-label="delivery location">
-            <button class="cta">Get Started</button>
-          </div>
-        </div>
-        <div class="hero-illustration">
-          <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=800&q=60" alt="groceries delivery">
-        </div>
-      </div>
-    </section>
+  <!-- Hero with large clickable image (linkable) -->
+  <table width="100%" cellpadding="22" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+        <font face="Trebuchet MS, Arial" color="#e6eef3">
+          <font size="+2"><b>Groceries & essentials — now in dark mode</b></font><br><br>
+        </font>
 
-    <section class="categories container">
-      <h3>Popular Categories</h3>
-      <div class="category-list">
-        <div class="cat">Fruits</div>
-        <div class="cat">Vegetables</div>
-        <div class="cat">Dairy</div>
-        <div class="cat">Beverages</div>
-        <div class="cat">Snacks</div>
-      </div>
-    </section>
+        <!-- Clickable hero image linking to shop section -->
+        <a href="#shop">
+          <img src="https://images.unsplash.com/photo-1585238341975-0528d1b8a3a0?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8f1b2a0e3f4de54b0d2f1a2b3c4d5e6f" alt="Fresh groceries" width="920" style="border:0;" />
+        </a>
 
-    <section class="products container">
-      <h3>Top picks for you</h3>
-      <div id="productsGrid" class="grid">
-        <!-- product cards injected by script or replicated here -->
-      </div>
-    </section>
-  </main>
+        <br><br>
+        <form action="#" method="get" name="search" aria-label="Search for products">
+          <table cellpadding="8" cellspacing="0" border="0" bgcolor="#11151a">
+            <tr>
+              <td>
+                <input type="text" name="q" placeholder="Search for mango, milk, chips..." size="48" />
+              </td>
+              <td>
+                <input type="submit" value="Search" />
+              </td>
+            </tr>
+          </table>
+        </form>
 
-  <button id="floatingCart" class="floating-cart" aria-label="Open cart">
-    🛒 <span id="floatingCount">0</span>
-  </button>
+        <br>
+        <font color="#9fbcd8">Popular: mangoes • organic milk • chips • instant noodles</font>
+      </td>
+    </tr>
+  </table>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; QuickCart — Fast grocery delivery. Built with ❤️</p>
-      <div class="social">Follow us: <a href="#">Twitter</a> · <a href="#">Instagram</a></div>
-    </div>
-  </footer>
+  <!-- Location & offers -->
+  <table width="95%" align="center" cellpadding="10" cellspacing="8" border="0">
+    <tr>
+      <td bgcolor="#0e1620" width="60%">
+        <font face="Verdana" color="#e6eef3"><b>Delivering to:</b> <i>Your area • 400017</i></font>
+      </td>
+      <td bgcolor="#11171d" width="40%" align="center">
+        <font color="#ffd9a3"><b>Free delivery on orders ₹199+</b></font>
+      </td>
+    </tr>
+  </table>
 
-  <script src="script.js"></script>
+  <!-- Categories with small images (clickable) -->
+  <table width="95%" align="center" cellpadding="8" cellspacing="8" border="0">
+    <tr>
+      <td bgcolor="#0f1720" align="center" valign="middle" width="16%">
+        <a href="#fruits"><img src="https://images.unsplash.com/photo-1574226516831-e2920e6f7b1c?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d2e1f6a7b4c5d6e7f8a9b0c1d2e3f4a" alt="Fruits" width="72" style="border-radius:6px;border:0;" /></a><br>
+        <b style="color:#e6eef3;">Fruits</b>
+      </td>
+      <td bgcolor="#0f1720" align="center" valign="middle" width="16%">
+        <a href="#vegetables"><img src="https://images.unsplash.com/photo-1447175008436-054170c2e979?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e" alt="Vegetables" width="72" style="border-radius:6px;border:0;" /></a><br>
+        <b style="color:#e6eef3;">Vegetables</b>
+      </td>
+      <td bgcolor="#0f1720" align="center" valign="middle" width="16%">
+        <a href="#dairy"><img src="https://images.unsplash.com/photo-1505576391880-49b2f2f4a7e3?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f" alt="Dairy" width="72" style="border-radius:6px;border:0;" /></a><br>
+        <b style="color:#e6eef3;">Dairy</b>
+      </td>
+      <td bgcolor="#0f1720" align="center" valign="middle" width="16%">
+        <a href="#snacks"><img src="https://images.unsplash.com/photo-1599785209790-1c6c3d89e0c3?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=af1b2c3d4e5f67890a1b2c3d4e5f6a7b" alt="Snacks" width="72" style="border-radius:6px;border:0;" /></a><br>
+        <b style="color:#e6eef3;">Snacks</b>
+      </td>
+      <td bgcolor="#0f1720" align="center" valign="middle" width="16%">
+        <a href="#beverages"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6" alt="Beverages" width="72" style="border-radius:6px;border:0;" /></a><br>
+        <b style="color:#e6eef3;">Beverages</b>
+      </td>
+      <td bgcolor="#0f1720" align="center" valign="middle" width="16%">
+        <a href="#household"><img src="https://images.unsplash.com/photo-1581579183380-4881f9f7a0f1?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d" alt="Household" width="72" style="border-radius:6px;border:0;" /></a><br>
+        <b style="color:#e6eef3;">Household</b>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Featured products with clickable images -->
+  <table id="shop" width="95%" align="center" cellpadding="10" cellspacing="12" border="0">
+    <tr>
+      <td colspan="3" bgcolor="#0b1116" align="center"><font color="#a3d9ff"><b>Featured</b></font></td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#0c1217" valign="top" width="32%">
+        <table width="100%" cellpadding="8" cellspacing="0" border="0">
+          <tr>
+            <td align="center" bgcolor="#0f1720">
+              <a href="#product-mango"><img src="https://images.unsplash.com/photo-1574226516831-e2920e6f7b1c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d2e1f6a7b4c5d6e7f8a9b0c1d2e3f4a" alt="Mango Pack" width="220" style="border:0;" /></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b style="color:#e6eef3">Mango Pack (1 kg)</b><br>
+              <font color="#9fbcd8">Fresh Alphonso • Seasonal</font><br><br>
+              <b style="color:#ffd9a3">₹199</b>
+              <form action="#cart" method="post" style="display:inline">
+                <input type="hidden" name="sku" value="mango-1kg" />
+                <input type="submit" value="Add to cart" />
+              </form>
+              <a href="#product-mango" style="margin-left:8px;color:#a3d9ff;">View</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+
+      <td bgcolor="#0c1217" valign="top" width="32%">
+        <table width="100%" cellpadding="8" cellspacing="0" border="0">
+          <tr><td align="center" bgcolor="#0f1720">
+            <a href="#product-milk"><img src="https://images.unsplash.com/photo-1505576391880-49b2f2f4a7e3?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f" alt="Organic Milk" width="220" style="border:0;" /></a>
+          </td></tr>
+          <tr><td>
+            <b style="color:#e6eef3">Organic Milk (1 L)</b><br>
+            <font color="#9fbcd8">Farm fresh • Pasteurized</font><br><br>
+            <b style="color:#ffd9a3">₹59</b>
+            <form action="#cart" method="post" style="display:inline"><input type="hidden" name="sku" value="milk-1l" /><input type="submit" value="Add to cart" /></form>
+            <a href="#product-milk" style="margin-left:8px;color:#a3d9ff;">View</a>
+          </td></tr>
+        </table>
+      </td>
+
+      <td bgcolor="#0c1217" valign="top" width="32%">
+        <table width="100%" cellpadding="8" cellspacing="0" border="0">
+          <tr><td align="center" bgcolor="#0f1720">
+            <a href="#product-choco"><img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e" alt="Chocolate Bars" width="220" style="border:0;" /></a>
+          </td></tr>
+          <tr><td>
+            <b style="color:#e6eef3">Chocolate Bars (Pack of 3)</b><br>
+            <font color="#9fbcd8">Assorted flavours</font><br><br>
+            <b style="color:#ffd9a3">₹129</b>
+            <form action="#cart" method="post" style="display:inline"><input type="hidden" name="sku" value="choco-3" /><input type="submit" value="Add to cart" /></form>
+            <a href="#product-choco" style="margin-left:8px;color:#a3d9ff;">View</a>
+          </td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- More rows with clickable images -->
+    <tr>
+      <td bgcolor="#0c1217" valign="top">
+        <table width="100%" cellpadding="8" cellspacing="0" border="0">
+          <tr><td align="center" bgcolor="#0f1720"><a href="#product-cookies"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d" alt="Cookies" width="220" style="border:0;" /></a></td></tr>
+          <tr><td>
+            <b style="color:#e6eef3">Cookies</b><br><font color="#9fbcd8">Crunchy delight</font><br><br><b style="color:#ffd9a3">₹79</b>
+            <form action="#cart" method="post" style="display:inline"><input type="hidden" name="sku" value="cookies" /><input type="submit" value="Add to cart" /></form>
+            <a href="#product-cookies" style="margin-left:8px;color:#a3d9ff;">View</a>
+          </td></tr>
+        </table>
+      </td>
+
+      <td bgcolor="#0c1217" valign="top">
+        <table width="100%" cellpadding="8" cellspacing="0" border="0">
+          <tr><td align="center" bgcolor="#0f1720"><a href="#product-noodles"><img src="https://images.unsplash.com/photo-1604908177522-6d0d4b1f69a6?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9c8b7a6d5e4f3c2b1a0b9c8d7e6f5a4b" alt="Instant Noodles" width="220" style="border:0;" /></a></td></tr>
+          <tr><td>
+            <b style="color:#e6eef3">Instant Noodles</b><br><font color="#9fbcd8">Masala • single pack</font><br><br><b style="color:#ffd9a3">₹25</b>
+            <form action="#cart" method="post" style="display:inline"><input type="hidden" name="sku" value="noodles" /><input type="submit" value="Add to cart" /></form>
+            <a href="#product-noodles" style="margin-left:8px;color:#a3d9ff;">View</a>
+          </td></tr>
+        </table>
+      </td>
+
+      <td bgcolor="#0c1217" valign="top">
+        <table width="100%" cellpadding="8" cellspacing="0" border="0">
+          <tr><td align="center" bgcolor="#0f1720"><a href="#product-lemons"><img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f2e3d4c5b6a79808192a3b4c5d6e7f8" alt="Lemons" width="220" style="border:0;" /></a></td></tr>
+          <tr><td>
+            <b style="color:#e6eef3">Lemons (Pack of 6)</b><br><font color="#9fbcd8">Citrus fresh</font><br><br><b style="color:#ffd9a3">₹19</b>
+            <form action="#cart" method="post" style="display:inline"><input type="hidden" name="sku" value="lemons" /><input type="submit" value="Add to cart" /></form>
+            <a href="#product-lemons" style="margin-left:8px;color:#a3d9ff;">View</a>
+          </td></tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+
+  <!-- CTA / Promo -->
+  <table width="95%" align="center" cellpadding="12" cellspacing="0" border="0" bgcolor="#0e1620">
+    <tr>
+      <td align="center">
+        <font face="Verdana" color="#e6eef3"><b>First order? Use code</b> <font color="#ffd9a3">ANUJWELCOME</font> <b>for 30% off</b></font>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Product detail anchors (images + description) -->
+  <table width="95%" align="center" cellpadding="12" cellspacing="12" border="0">
+    <tr>
+      <td id="product-mango" bgcolor="#0b1116">
+        <font color="#aee6ff"><b>Mango Pack (1 kg)</b></font><br>
+        <img src="https://images.unsplash.com/photo-1574226516831-e2920e6f7b1c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d2e1f6a7b4c5d6e7f8a9b0c1d2e3f4a" alt="Mangoes" width="680" style="border:0;" /><br>
+        <font color="#9fbcd8">Ripe Alphonso mangoes, handpicked. Perfect for desserts and snacking.</font><br>
+        <b style="color:#ffd9a3">₹199</b>
+        <form action="#cart" method="post" style="display:inline"><input type="hidden" name="sku" value="mango-1kg" /><input type="submit" value="Add to cart" /></form>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="product-milk" bgcolor="#0b1116">
+        <font color="#aee6ff"><b>Organic Milk (1 L)</b></font><br>
+        <img src="https://images.unsplash.com/photo-1505576391880-49b2f2f4a7e3?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f" alt="Milk" width="680" style="border:0;" /><br>
+        <font color="#9fbcd8">Fresh milk from local farms, pasteurized and sealed.</font><br>
+        <b style="color:#ffd9a3">₹59</b>
+        <form action="#cart" method="post" style="display:inline"><input type="hidden" name="sku" value="milk-1l" /><input type="submit" value="Add to cart" /></form>
+      </td>
+    </tr>
+
+    <tr>
+      <td id="product-choco" bgcolor="#0b1116">
+        <font color="#aee6ff"><b>Chocolate Bars (Pack of 3)</b></font><br>
+        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e" alt="Chocolate" width="680" style="border:0;" /><br>
+        <font color="#9fbcd8">Assorted chocolate bars. Perfect for gifting or a sweet treat.</font><br>
+        <b style="color:#ffd9a3">₹129</b>
+        <form action="#cart" method="post" style="display:inline"><input type="hidden" name="sku" value="choco-3" /><input type="submit" value="Add to cart" /></form>
+      </td>
+    </tr>
+
+  </table>
+
+  <!-- FAQ & Help -->
+  <table id="help" width="95%" align="center" cellpadding="12" cellspacing="10" border="0">
+    <tr>
+      <td bgcolor="#0e1620">
+        <b style="color:#e6eef3">FAQ</b>
+        <ol style="color:#9fbcd8">
+          <li>How fast is delivery? Typically 15–30 minutes depending on location.</li>
+          <li>What payment methods? Cash on delivery, UPI, and cards (demo).</li>
+          <li>Return policy? Perishables cannot be returned; damaged items refunded.</li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
+  <table width="100%" cellpadding="12" cellspacing="0" border="0" bgcolor="#081018" style="border-collapse:collapse;">
+    <tr>
+      <td align="left" width="33%">
+        <font color="#9fbcd8" face="Verdana, Arial" size="-1">© anujkit • quick groceries</font>
+      </td>
+      <td align="center" width="34%">
+        <font color="#9fbcd8" face="Verdana, Arial" size="-1"><a href="#terms" style="color:#9fbcd8">Terms</a> • <a href="#privacy" style="color:#9fbcd8">Privacy</a></font>
+      </td>
+      <td align="right" width="33%">
+        <font color="#9fbcd8" face="Verdana, Arial" size="-1">Contact: <a href="mailto:help@anujkit.example" style="color:#9fbcd8">help@anujkit.example</a></font>
+      </td>
+    </tr>
+  </table>
+
 </body>
 </html>
